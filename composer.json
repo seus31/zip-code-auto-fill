@@ -1,0 +1,27 @@
+{
+    "name": "seus31/zip-code-auto-fill",
+    "description": "Livewireでzipcodeの自動入力を実装する。",
+    "authors": [
+        {
+            "name": "SEUS31",
+            "email": "develop@seusthreeone.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "8.*",
+        "livewire/livewire": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seus31\\ZipCodeAutoFill\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seus31\\ZipCodeAutoFill\\Providers\\ZipCodeAutoFillServiceProvider"
+            ]
+        }
+    }
+}
