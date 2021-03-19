@@ -1,6 +1,7 @@
 {
     "name": "seus31/zip-code-auto-fill",
     "description": "Livewireでzipcodeの自動入力を実装する。",
+    "license": "MIT",
     "authors": [
         {
             "name": "SEUS31",

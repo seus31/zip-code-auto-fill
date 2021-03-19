@@ -1,4 +1,9 @@
 <?php
+/**
+ *  Copyright (c) 2021 seus31
+ *  Released under the MIT license
+ *  https://github.com/seus31/zip-code-auto-fill/blob/master/license.txt
+ */
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;

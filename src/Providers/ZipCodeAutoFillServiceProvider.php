@@ -1,4 +1,9 @@
 <?php
+/**
+ *  Copyright (c) 2021 seus31
+ *  Released under the MIT license
+ *  https://github.com/seus31/zip-code-auto-fill/blob/master/license.txt
+ */
 
 namespace Seus31\ZipCodeAutoFill\Providers;
 

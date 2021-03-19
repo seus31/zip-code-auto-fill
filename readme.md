@@ -35,3 +35,7 @@ php artisan zip-code-auto-fill:file:create
 都道府県を入力するinputタグに```class="af_pref"```を設定  
 市区町村を入力するinputタグに```class="af_city"```を設定  
 住所を入力するinputタグに```class="af_address"```を設定  
+
+Copyright (c) 2021 seus31
+Released under the MIT license
+https://github.com/seus31/zip-code-auto-fill/blob/master/license.txt
