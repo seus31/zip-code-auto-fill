@@ -4,8 +4,9 @@
 このパッケージはJavascriptでよくある郵便番号を入力したら自動で住所を入力する機能をLaravelのLivewireを使って実装するものです。
 
 ## 環境
-* PHP >= 7.2.5
-* Laravel >= 7.0
+* PHP >= 8.1
+* Laravel 10.x / 11.x / 12.x
+* Livewire 3.x
 
 ## 使い方
 
@@ -14,6 +15,36 @@
 ```shell
 composer require seus31/zip-code-auto-fill
 ```
+
+## パッケージ開発
+
+このリポジトリ自体を開発する場合、PHP/Composerはホストに一切インストールせず、Dockerコンテナ内のみで作業します。
+`vendor` などComposerが生成するファイルもホストの実ファイルシステムには置かれず、Dockerの名前付きボリューム内にのみ保持されます。
+
+### 事前準備
+Docker / Docker Composeが使えること。ホスト側にPHPやComposerを用意する必要はありません。
+
+### イメージのビルド
+```shell
+make build
+```
+
+### 依存関係のインストール
+```shell
+make install
+```
+
+### テストの実行
+```shell
+make test
+```
+
+### コンテナ内シェルに入る
+```shell
+make shell
+```
+
+その他のコマンドを実行したい場合も、必ず `docker compose run --rm app <コマンド>` の形でコンテナ内から実行してください。
 
 ### 各種コマンドの実行
 郵便番号データの作成
