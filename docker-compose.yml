@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/work
+      - vendor:/work/vendor
+      - composer-cache:/tmp/composer-cache
+    working_dir: /work
+    environment:
+      COMPOSER_CACHE_DIR: /tmp/composer-cache
+
+volumes:
+  vendor:
+  composer-cache:
