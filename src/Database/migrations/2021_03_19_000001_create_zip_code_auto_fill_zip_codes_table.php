@@ -9,7 +9,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateZipcodeAutoFillZipCodesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -38,4 +38,4 @@ class CreateZipcodeAutoFillZipCodesTable extends Migration
     {
         Schema::dropIfExists('zip_code_auto_fill_zip_codes');
     }
-}
+};
