@@ -59,7 +59,7 @@ php artisan zip-code-auto-fill:file:create
 
 郵便番号検索機能を設置する対象のbladeテンプレートにlivewireコンポーネントを配置
 ```blade.php
-<livewire:zip-code-auto-fill />
+<livewire:zip-code-auto-fill-form />
 ```
 ### htmlの設定
 郵便番号を入力するinputタグに```id="zipcode"```を設定  

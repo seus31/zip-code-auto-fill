@@ -10,7 +10,7 @@ return [
      * ディレクトリ
      */
     'directories' => [
-        'app/Http/Livewire',
+        'app/Livewire',
         'resources/views/livewire',
     ],
 
@@ -18,7 +18,7 @@ return [
      * コピーファイル
      */
     'copies' => [
-        __DiR__ . '/../Stubs/ZipCodeAutoFillForm.php.stub' => app_path('Http/Livewire/') . 'ZipCodeAutoFillForm.php',
+        __DiR__ . '/../Stubs/ZipCodeAutoFillForm.php.stub' => app_path('Livewire/') . 'ZipCodeAutoFillForm.php',
         __DiR__ . '/../Stubs/zip-code-auto-fill-form.blade.php.stub' => base_path('resources/views/livewire/') . 'zip-code-auto-fill-form.blade.php',
     ],
 ];
