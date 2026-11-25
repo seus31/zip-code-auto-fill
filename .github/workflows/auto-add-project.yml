@@ -1,0 +1,18 @@
+name: Auto Add Issue to Master Project
+
+on:
+  issues:
+    types: [opened, reopened]
+
+# PAT（ADD_TO_PROJECT_TOKEN）だけを使うので、GITHUB_TOKEN には権限を与えない
+permissions: {}
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      # タグの付け替えに備えて、コミットの SHA で固定する
+      - uses: actions/add-to-project@f2c1f1fa649a891be84948ea89b5dfba1526ef05 # v2.0.1
+        with:
+          project-url: https://github.com/users/seus31/projects/3
+          github-token: ${{ secrets.ADD_TO_PROJECT_TOKEN }}
